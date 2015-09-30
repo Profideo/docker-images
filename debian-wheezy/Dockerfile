@@ -19,7 +19,7 @@ RUN mkdir -p /root/.ssh
 
 # install supervisor
 RUN apt-get install -y supervisor
-RUN mkdir -p /var/lock/apache2 /var/run/apache2 /var/run/sshd /var/log/supervisor
+RUN mkdir -p /var/run/sshd /var/log/supervisor
 
 # Set locale
 RUN apt-get -qqy install locales
