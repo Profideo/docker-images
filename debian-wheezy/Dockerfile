@@ -49,4 +49,11 @@ RUN apt-get install -q -y zip
 
 RUN apt-get install -y cron
 
+#Install useful apps
+RUN apt-get install -y -q screen
+RUN apt-get install -y -q emacs
+RUN apt-get install -y -q tree
+COPY emacs.conf /home/profideo/.emacs
+COPY vimrc.conf /etc/vim/vimrc
+
 EXPOSE 22
