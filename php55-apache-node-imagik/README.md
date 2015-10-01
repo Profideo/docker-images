@@ -1,4 +1,4 @@
-docker-image-php54-imagick
+docker-image-php55-imagick
 ==========================
 
-ImageMagick and PHP 5.4 basic docker image
+ImageMagick and PHP 5.5 basic docker image
