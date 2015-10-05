@@ -1,4 +1,4 @@
-FROM profideo/php54
+FROM profideo/php54:unstable
 
 MAINTAINER Alban Duval <aduval@profideo.com>
 
