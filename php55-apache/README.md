@@ -1,4 +1,4 @@
-docker-image-php54-apache
+docker-image-php55-apache
 =========================
 
-Apache and PHP 5.4 basic docker image
+Apache and PHP 5.5 basic docker image

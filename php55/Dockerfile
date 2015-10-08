@@ -1,4 +1,4 @@
-FROM profideo/debian-wheezy
+FROM profideo/debian-wheezy:unstable
 
 MAINTAINER Alban Duval <aduval@profideo.com>
 

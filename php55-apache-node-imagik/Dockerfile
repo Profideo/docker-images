@@ -1,4 +1,4 @@
-FROM profideo/php55-apache-node
+FROM profideo/php55-apache-node:unstable
 
 MAINTAINER Alban Duval <aduval@profideo.com>
 

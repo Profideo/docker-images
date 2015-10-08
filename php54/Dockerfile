@@ -1,8 +1,8 @@
-FROM profideo/debian-wheezy
+FROM profideo/debian-wheezy:unstable
 
 MAINTAINER Alban Duval <aduval@profideo.com>
 
-# php5 from dotdeb (wheezy => php5.4)
+# php5 from dotdeb (wheezy => php5.4) 
 RUN echo "deb http://packages.dotdeb.org wheezy all" > /etc/apt/sources.list.d/php.list
 RUN echo "deb-src http://packages.dotdeb.org wheezy all" >> /etc/apt/sources.list.d/php.list
 RUN wget -q http://www.dotdeb.org/dotdeb.gpg -O-|apt-key add -
