@@ -53,7 +53,8 @@ RUN apt-get install -y cron
 RUN apt-get install -y -q screen
 RUN apt-get install -y -q emacs
 RUN apt-get install -y -q tree
-COPY emacs.conf /home/profideo/.emacs
-COPY vimrc.conf /etc/vim/vimrc
+COPY ./files/emacs.conf /home/profideo/.emacs
+COPY ./files/vimrc.conf /etc/vim/vimrc
+COPY ./files/gitconfig /home/profideo/.gitconfig
 
 EXPOSE 22

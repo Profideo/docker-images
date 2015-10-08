@@ -1,0 +1,11 @@
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  ui = true
+[alias]
+  ci = commit
+  co = checkout
+  st = status
+  br = branch
+  ds = diff --staged
