@@ -48,6 +48,8 @@ RUN buildDeps=" \
 		$PHP_EXTRA_CONFIGURE_ARGS \
 		--disable-cgi \
 		--enable-mysqlnd \
+                --with-gd
+                --with-jpeg-dir/usr/lib \
 		--enable-mbstring \
 		--with-curl \
 		--with-openssl \
@@ -100,13 +102,11 @@ RUN apt-get update && apt-get install -y \
         php5-xsl \
         libapache2-mod-fastcgi
 RUN /usr/local/bin/docker-php-ext-install \
-        gd \
         mysql \
         zip \
         pdo_mysql \
         bcmath
 RUN /usr/local/bin/docker-php-ext-enable \
-        gd \
         mysql \
         zip \
         pdo_mysql \
