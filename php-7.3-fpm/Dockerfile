@@ -229,6 +229,11 @@ RUN set -ex \
 ##<overload by profideo>##
 RUN a2enmod proxy
 RUN a2enmod proxy_fcgi
+
+# Set timezone
+ENV TIMEZONE=Europe/Paris
+RUN  ln -snf /usr/share/zoneinfo/$TIMEZONE /etc/localtime && echo $TIMEZONE > /etc/timezone \
+  && printf '[PHP]\ndate.timezone = "%s"\n', $TIMEZONE > /usr/local/etc/php/conf.d/tzone.ini
 ##</overload by profideo>##
 
 EXPOSE 9000
