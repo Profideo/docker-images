@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y clamav clamav-freshclam clamav-daemon
 # Install nodejs
 RUN apt-get install -y software-properties-common
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
-RUN apt-get install -y nodejs
+RUN apt-get install -y --force-yes nodejs
 
 # Supervisor
 COPY files/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
